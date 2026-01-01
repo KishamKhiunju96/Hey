@@ -12,7 +12,13 @@ const MasonryGrid = () => {
       columnWidth={260}
       columnGutter={16}
       overscanBy={2}
-      render={({ data }) => <GridCard title={data.title} image={data.image} />}
+      render={({ data }) => (
+        <GridCard
+          title={data.title}
+          description={data.description}
+          image={data.image}
+        />
+      )}
     />
   );
 };
